@@ -1,0 +1,19 @@
+{
+  "geode": "5.11.2",
+  "gd": {
+    "win": "2.2081"
+  },
+  "version": "1.0.0",
+  "id": "tuusuario.predictive-input-buffer",
+  "name": "Predictive Input Buffer",
+  "developer": "TuUsuario",
+  "description": "Community recreation: F6 cycles 1-10 input-buffer ticks then OFF; on-screen status indicator.",
+  "settings": {
+    "verbose-log": {
+      "type": "bool",
+      "name": "Detailed log",
+      "description": "Prints queued input details to the Geode log.",
+      "default": false
+    }
+  }
+}
