@@ -9,8 +9,15 @@
   "name": "Predictive Input Buffer",
   "developer": "TuUsuario",
   "description": "Community recreation: F6 cycles 1-10 input-buffer ticks then OFF; on-screen status indicator.",
-  "settings": {
-    "verbose-log": {
+  "settings": {   
+"buffer-keybind": {
+  "name": "Cycle Buffer",
+  "description": "Cycle through buffer ticks 1–10 and OFF.",
+  "type": "keybind",
+  "default": "F6",
+  "category": "gameplay"
+}
+   "verbose-log": {
       "type": "bool",
       "name": "Detailed log",
       "description": "Prints queued input details to the Geode log.",
