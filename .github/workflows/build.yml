@@ -8,17 +8,19 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build Geode mod
+      - name: Build Windows mod
         uses: geode-sdk/build-geode-mod@main
+        with:
+          target: Win64
 
       - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
-          name: Build-Output
+          name: Build-Output-Windows
           path: "**/*.geode"
           if-no-files-found: error
